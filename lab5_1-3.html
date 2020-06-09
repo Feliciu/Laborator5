@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Laboratorul5</title>
+    </head>
+    <body>
+ 
+
+
+ <script>var character = '#';
+var sign = '#'
+for(i=0; i<7; i++){
+    console.log(sign);
+    document.write(sign + '<br/>')
+    sign+=character;
+    
+    
+}
+for(  line = "#"; line.length<8; line+="#"){
+    console.log(line)
+}
+</script>
+<br> 
+<br>
+<button onclick="myFunction()">Ex.2</button>
+
+<p id="ex2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("ex2").innerHTML = Math.min(5,	 10);
+}
+</script>
+
+<br> 
+<br>
+
+<button onclick="myFunction2()">Ex.3</button>
+
+<p id="ex3"></p>
+
+<script>
+	var numbers = [2, 4, -4, 10, 0, 17];
+function myFunction2() {
+  document.getElementById("ex3").innerHTML = Math.min.apply(null, numbers)
+}
+</script>
+
+
+
+    </body>
+</html>

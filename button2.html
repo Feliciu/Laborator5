@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+<a href="../main.html">Page</a>
+<p>Just Consolep>
+<p id="demo">html preview</p>
+	<script type="text/javascript">
+
+async function api() {
+	let response = await fetch("https://reqres.in/api/users/");
+	let data = await response.json()
+	return data;
+}
+
+  api().then(data => console.log(data));
+	</script>
+
+</body>
+</html>
